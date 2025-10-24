@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arman Urazov — Software Developer Resume</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      color: #1a1a1a;
+      background: #f0f2f5;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #fff;
+      display: flex;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    /* Left Sidebar */
+    .sidebar {
+      width: 30%;
+      background: linear-gradient(135deg, #007acc, #004f99);
+      color: #fff;
+      padding: 40px 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .sidebar h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+
+    .sidebar .contact, .sidebar h2 {
+      font-weight: 600;
+      font-size: 12px;
+      margin-top: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .sidebar a {
+      color: #e6f0ff;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .sidebar a:hover {
+      color: #ffd700;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    .sidebar li {
+      margin-bottom: 8px;
+      font-size: 13px;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    /* Right Main Content */
+    .main {
+      width: 70%;
+      padding: 40px 30px;
+      background: #fff;
+    }
+
+    .main h2 {
+      color: #007acc;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 5px;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .main h3 {
+      font-size: 15px;
+      color: #1a1a1a;
+      margin: 15px 0 5px;
+      font-weight: 600;
+    }
+
+    .main .sub {
+      font-size: 13px;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .main ul {
+      padding-left: 20px;
+      margin: 5px 0 10px;
+    }
+
+    .main li {
+      margin-bottom: 5px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .profile-text {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    /* Two-column compact skills */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills li {
+      flex: 1 1 45%;
+      margin-bottom: 6px;
+      list-style-type: "→ ";
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    /* Animations for digital viewing */
+    .sidebar, .main {
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover .sidebar {
+      transform: translateY(-5px);
+    }
+
+    @media print {
+      body { background: #fff; }
+      .container { box-shadow: none; border-radius: 0; }
+      .sidebar, .main { transform: none; }
+      .sidebar { background: #007acc; }
+    }
+
+    @media (max-width: 768px) {
+      .container { flex-direction: column; }
+      .sidebar, .main { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h1>Арман Уразов</h1>
+      <div class="contact">
+        📧 <a href="mailto:armanurazov.inbox@gmail.com">armanurazov.inbox@gmail.com</a><br>
+        🌐 <a href="https://linkedin.com/in/arman-urazov" target="_blank">linkedin.com/in/arman-urazov</a><br>
+        💻 <a href="https://github.com/armanurazov" target="_blank">github.com/arman-urazov</a>
+      </div>
+
+      <h2>Навыки</h2>
+      <ul class="skills">
+        <li>JavaScript, TypeScript, React</li>
+        <li>Node.js, Express.js, NestJS</li>
+        <li>PostgreSQL, MongoDB, Supabase</li>
+        <li>Git, GitHub, GitLab, CI/CD</li>
+        <li>AWS, Docker, Render</li>
+        <li>Agile, Scrum, TDD</li>
+      </ul>
+
+      <h2>Языки</h2>
+      <ul>
+        <li>Русский — родной</li>
+        <li>Английский — профессиональный (C1)</li>
+        <li>Чешский — уверенный (B2)</li>
+        <li>Французский — начинающий (А2)</li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <h2>Профиль</h2>
+      <p class="profile-text">
+        Я — целеустремлённый и инициативный <strong>Software Developer</strong> с опытом веб- и мобильной разработки,
+        создаю производительные решения на <strong>JavaScript, React, React Native</strong> и <strong>Node.js</strong>.
+        Обладаю аналитическим мышлением, вниманием к деталям и умею работать как самостоятельно, так и в команде.
+      </p>
+
+      <h2>Опыт работы</h2>
+      <h3>Junior AppOps Technician, Application Development - First National</h3>
+      <p class="sub">Торонто, Канада | Июль 2024 – Декабрь 2025</p>
+      <ul>
+        <li>Обеспечивал стабильность продакшн-приложений, достигая 99.9% SLA.</li>
+        <li>Автоматизировал CI/CD процессы, сократив время релизов на 30%.</li>
+        <li>Анализировал инциденты и оптимизировал документацию в Helpdesk.com.</li>
+      </ul>
+
+      <h3>Financial Reporting and Accounting Specialist — Novartis</h3>
+      <p class="sub">Прага, Чехия | Апрель 2019 – Июль 2021</p>
+      <ul>
+        <li>Разработал макросы и облачные решения, снизив трудозатраты на отчётность на 20%.</li>
+        <li>Проводил анализ финансовых данных, улучшив точность прогнозов.</li>
+      </ul>
+
+      <h3>Customer Service Representative — ExxonMobil</h3>
+      <p class="sub">Прага, Чехия | Июнь 2018 – Сентябрь 2018</p>
+      <ul>
+        <li>Оптимизировал логистические процессы, сократив время обработки заказов.</li>
+        <li>Внедрил улучшения клиентского опыта, повысив удовлетворённость на 15%.</li>
+      </ul>
+
+      <h2>Проекты</h2>
+      <h3>Samaritan — Сооснователь / Full-Stack Developer</h3>
+      <ul>
+        <li>Спроектировал архитектуру и разработал MVP социальной платформы на React и Node.js.</li>
+        <li>Настроил CI/CD через Render и внедрил мониторинг с health-checks.</li>
+        <li>Организовал разработку с использованием GitHub и Agile-методов.</li>
+      </ul>
+
+      <h3>Sarqyt — Автор / Full-Stack Developer</h3>
+      <ul>
+        <li>Создал мобильное приложение на React Native с бэкендом на Node.js и PostgreSQL.</li>
+        <li>Реализовал авторизацию (JWT, SMS) и оптимизировал API-взаимодействия.</li>
+        <li>Разработал интуитивный UI/UX, обеспечив высокую производительность.</li>
+      </ul>
+
+      <h2>Образование</h2>
+      <h3>Seneca College, Торонто, Канада</h3>
+      <p class="sub">Computer Programming Diploma, 2020–2022</p>
+      <ul>
+        <li>Я освоил современные технологии разработки: JavaScript, TypeScript, React, Node.js, PostgreSQL, MongoDB.</li>
+        <li>Я приобрёл навыки DevOps, CI/CD, системного администрирования (Linux/Windows) и TDD.</li>
+        <li>Я внёс вклад в open-source проекты, укрепив навыки командной работы в Agile.</li>
+      </ul>
+
+      <h3>Чешский университет естественных наук, Прага, Чехия</h3>
+      <p class="sub">Business Administration, 2013–2018</p>
+      <ul>
+        <li>Я изучил экономику, финансы, менеджмент и цифровую трансформацию.</li>
+        <li>Я развил навыки управления проектами и бизнес-аналитики в международной среде.</li>
+        <li>Я защитил диплом по оптимизации бизнес-процессов через автоматизацию.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
